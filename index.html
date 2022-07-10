@@ -44,10 +44,53 @@
         <button class="button-primary" type="button" data-modal-open>Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
+ 
           <div class="modal">
             <button class="button-modal" type="button" data-modal-close><svg width="11px" height="11px">
               <use href="./images/icons.svg#close-button"></use></svg></button>
+          
+
+
+            <h2 class="header-modal">Оставьте свои данные, мы вам перезвоним</h2>
+          
+            <form class="forms">
+
+            <div class="form-modal">
+            <label for="name" class="label-modal">Имя</label>
+            <input type="name" name="name" id="name" />
           </div>
+          
+          
+            <div class="form-modal">
+            <label for="tel" class="label-modal">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+         
+          
+            <div class="form-modal">
+            <label for="email" class="label-modal">Почта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          
+          
+            <div class="form-modal comments">
+            <label for="comments" class="label-modal">Комментарий</label>
+            <textarea name="comments" id="comments" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+
+          <div class="form-modal terms">
+            <input type="checkbox" name="" value="terms" id="terms"/>
+            <label for="terms" >Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+          </div>
+
+
+          </form>
+
+             </div>
+
+
+
         </div>
 
       </div>
@@ -296,8 +339,9 @@
 <div class="form-footer">
   <h3 class="third-title">Подпишитесь на рассылку</h3>
   <form class="form-footer-form">
-    <label for="name"></label>
-    <input type="email" name="email" id="email" placeholder="E-mail">
+
+    <label for="email"></label>
+    <input type="email" name="email" id="email" placeholder="E-mail"/>
     <button class="button-primary-footer" type="submit" >Подписаться<svg class="submit-footer" width="24px" height="24px">
       <use href="./images/icons.svg#icon-icon-send-1"></use>
           </svg></button>
