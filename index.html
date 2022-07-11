@@ -47,7 +47,8 @@
         <div class="backdrop is-hidden" data-modal>
  
           <div class="modal">
-            <button class="button-modal" type="button" data-modal-close><svg width="11px" height="11px">
+            <button class="button-modal" type="button" data-modal-close>
+              <svg class="close-svg" width="11px" height="11px">
               <use href="./images/icons.svg#close-button"></use></svg></button>
           
 
@@ -58,32 +59,45 @@
 
             <div class="form-modal">
             <label for="name" class="label-modal">Имя</label>
-            <input type="name" name="name" id="name" />
+            <input type="name" class="input-form" name="name" id="name" />
+            <svg class="modal-svg" width="18px" height="18px">
+              <use href="./images/icons.svg#modal-person"></use>
+            </svg>
           </div>
           
           
             <div class="form-modal">
             <label for="tel" class="label-modal">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input type="tel" class="input-form" name="tel" id="tel" />
+            <svg class="modal-svg" width="18px" height="18px">
+              <use href="./images/icons.svg#modal-phone"></use>
+            </svg>
           </div>
          
           
             <div class="form-modal">
             <label for="email" class="label-modal">Почта</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" class="input-form" name="email" id="email" />
+            <svg class="modal-svg" width="18px" height="18px">
+              <use href="./images/icons.svg#modal-email"></use>
+            </svg>
           </div>
           
           
             <div class="form-modal comments">
             <label for="comments" class="label-modal">Комментарий</label>
-            <textarea name="comments" id="comments" rows="10" 
+            <textarea class="comment-text" name="comments" id="comments" rows="10" 
             placeholder="Введите текст"></textarea>
           </div>
 
+
+
           <div class="form-modal terms">
-            <input type="checkbox" name="" value="terms" id="terms"/>
-            <label for="terms">Соглашаюсь с рассылкой и принимаю
-              <a class="contract">Условия договора</a> </label>
+            
+            <label class="terms-checkbox" for="terms"><span class="icon-checkbox"></span>
+              <input class="checkbox-form" type="checkbox" name="" value="terms" id="terms"/>
+              Соглашаюсь с рассылкой и принимаю <a class="contract"> Условия договора</a>           
+            </label>
           </div>
           
           <button class="button-primary " type="button">Отправить</button>
