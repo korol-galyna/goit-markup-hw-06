@@ -442,8 +442,12 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-color);
-display: block;
+
 margin-bottom: 30px;
+
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
@@ -474,12 +478,15 @@ margin-bottom: 30px;
 }
 
 .form-modal input.checkbox-form {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 0;
     position: absolute;
-}
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} 
 
   .icon-checkbox {
     display: inline-block;
@@ -487,8 +494,7 @@ margin-bottom: 30px;
     height: 15px;
     border: 2px solid var(--black-color);
     border-radius: 2px;
-    margin-right: 8.38px;
-    
+    margin-right: 8.38px;   
 }  
 
 .terms-checkbox {
@@ -497,7 +503,13 @@ margin-bottom: 30px;
     align-items: center;
 }
 
-
+.checkbox-form:checked + .icon-checkbox {
+    border-color: var(--blue-color);
+    background-color: var(--blue-color);
+    background-image: url(../images/img.svg/img6.svg);
+    
+    
+} 
 
 
 
