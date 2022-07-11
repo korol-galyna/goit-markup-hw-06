@@ -41,7 +41,8 @@
       <section class="section-hero">
         <div class="hero-overlay">
         <h1 class="first-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button-primary" type="button" data-modal-open>Заказать услугу</button>
+        <button class="button-primary" type="button" data-modal-open>
+          Заказать услугу</button>
 
         <div class="backdrop is-hidden" data-modal>
  
@@ -75,15 +76,17 @@
           
             <div class="form-modal comments">
             <label for="comments" class="label-modal">Комментарий</label>
-            <textarea name="comments" id="comments" rows="10" placeholder="Введите текст"></textarea>
+            <textarea name="comments" id="comments" rows="10" 
+            placeholder="Введите текст"></textarea>
           </div>
 
           <div class="form-modal terms">
             <input type="checkbox" name="" value="terms" id="terms"/>
-            <label for="terms" >Соглашаюсь с рассылкой и принимаю Условия договора</label>
-
+            <label for="terms">Соглашаюсь с рассылкой и принимаю
+              <a class="contract">Условия договора</a> </label>
           </div>
-
+          
+          <button class="button-primary " type="button">Отправить</button>
 
           </form>
 
@@ -340,8 +343,8 @@
   <h3 class="third-title">Подпишитесь на рассылку</h3>
   <form class="form-footer-form">
 
-    <label for="email"></label>
-    <input type="email" name="email" id="email" placeholder="E-mail"/>
+    <label for="email-label"></label>
+    <input type="email" name="email" id="email-label" placeholder="E-mail"/>
     <button class="button-primary-footer" type="submit" >Подписаться<svg class="submit-footer" width="24px" height="24px">
       <use href="./images/icons.svg#icon-icon-send-1"></use>
           </svg></button>
